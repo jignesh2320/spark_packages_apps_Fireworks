@@ -48,7 +48,7 @@
         android:title="@string/statusbar_network_traffic_unit_text_size_title"
         android:defaultValue="21"
         android:max="25"
-        android:min="15"
+        android:min="5"
         settings:units="px" />
 
     <com.spark.support.preferences.SystemSettingSeekBarPreference
