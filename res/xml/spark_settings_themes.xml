@@ -136,6 +136,14 @@
             android:min="2"
             settings:interval="1"
             android:defaultValue="4" />
+        
+        <com.spark.support.preferences.SystemSettingSeekBarPreference
+            android:key="qs_header_image"
+            android:title="@string/qs_header_image_title"
+            android:defaultValue="0"
+            settings:interval="1"
+            android:max="11"
+            android:min="0" />
 
     </PreferenceCategory>
 
