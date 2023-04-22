@@ -685,6 +685,9 @@
 
     <!-- Sb clock bg -->
     <string name="status_bar_show_clock_bg">Show clock background chip</string>
+    <string name="solid_accent">Solid color accent</string>
+    <string name="outline">Outline</string>
+    <string name="solid_accent_gradient">Solid color accent gradient</string>
 
     <!-- Font -->
     <string name="font_settings">Font Settings</string>
