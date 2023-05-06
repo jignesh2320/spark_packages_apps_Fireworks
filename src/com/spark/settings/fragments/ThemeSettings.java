@@ -293,22 +293,11 @@ public class ThemeSettings extends DashboardFragment implements
               break;
           case 10:
             setQsStyle(mOverlayService, "com.android.system.qs.thin");
-              break;
-            default:
-              break;
+      break;
+          default:
+      break;
         }
 	 }
-    }
-
-    public static void setDefaultStyle(IOverlayManager overlayManager) {
-        for (int i = 0; i < QS_STYLES.length; i++) {
-            String qsStyles = QS_STYLES[i];
-            try {
-                overlayManager.setEnabled(qsStyles, false, USER_SYSTEM);
-            } catch (RemoteException e) {
-                e.printStackTrace();
-            }
-        }
     }
 
     public static void setQsStyle(String overlayName) {
@@ -316,20 +305,6 @@ public class ThemeSettings extends DashboardFragment implements
                 Settings.System.QS_UI_STYLE , 1, UserHandle.USER_CURRENT) == 1;
         mThemeUtils.setOverlayEnabled(isA11Style ? "android.theme.customization.qs_ui" : "android.theme.customization.qs_panel", overlayName, "com.android.systemui");
     }
-    }
-
-    public static final String[] QS_STYLES = {
-        "com.android.system.qs.roundedrectangle",
-        "com.android.system.qs.outline",
-        "com.android.system.qs.twotoneaccent",
-        "com.android.system.qs.shaded",
-        "com.android.system.qs.cyberpunk",
-        "com.android.system.qs.neumorph",
-        "com.android.system.qs.reflected",
-        "com.android.system.qs.surround",
-        "com.android.system.qs.thin"
-    };
-
 
 	private void updateTileAnimationStyleSummary(int tileAnimationStyle) {
         String prefix = (String) mTileAnimationStyle.getEntries()[mTileAnimationStyle.findIndexOfValue(String
