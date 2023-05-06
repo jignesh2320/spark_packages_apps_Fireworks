@@ -182,7 +182,7 @@ public class ThemeSettings extends DashboardFragment implements
         @Override
         public void onChange(boolean selfChange, Uri uri) {
             if (uri.equals(Settings.System.getUriFor(Settings.System.QS_PANEL_STYLE))) {
-                updateQsStyle();
+                updateQsStyle(false);
 	    }
             else if  (uri.equals(Settings.System.getUriFor(Settings.System.QS_UI_STYLE))) {
                 updateQsStyle(true /*QS UI theme*/);
@@ -254,7 +254,7 @@ public class ThemeSettings extends DashboardFragment implements
     private void updateQsStyle(boolean isQsUI) {
         ContentResolver resolver = getActivity().getContentResolver();
 
-	boolean isA11Style = Settings.System.getIntForUser(getContext().getContentResolver(),
+	boolean isA11Style = Settings.System.getIntForUser(getContentResolver(),
                 Settings.System.QS_UI_STYLE , 1, UserHandle.USER_CURRENT) == 1;
 	if (isQsUI) {
 	    setQsStyle(isA11Style ? "com.android.system.qs.ui.A11" : "com.android.systemui");
@@ -264,35 +264,35 @@ public class ThemeSettings extends DashboardFragment implements
 
         switch (qsPanelStyle) {
     	  case 0:
-            setQsStyle(mOverlayService, "com.android.systemui");
+            setQsStyle("com.android.systemui");
           break;
           case 1:
-            setQsStyle(mOverlayService, "com.android.system.qs.roundedrectangle");
+            setQsStyle("com.android.system.qs.roundedrectangle");
 	  break;
           case 2:
-            setQsStyle(mOverlayService, "com.android.system.qs.outline");
+            setQsStyle("com.android.system.qs.outline");
 	  break;
           case 3:
 	  case 4:
-            setQsStyle(mOverlayService, "com.android.system.qs.twotoneaccent");
+            setQsStyle("com.android.system.qs.twotoneaccent");
 	  break;
           case 5:
-            setQsStyle(mOverlayService, "com.android.system.qs.shaded");
+            setQsStyle("com.android.system.qs.shaded");
 	  break;
           case 6:
-            setQsStyle(mOverlayService, "com.android.system.qs.cyberpunk");
+            setQsStyle("com.android.system.qs.cyberpunk");
  	  break;
           case 7:
-            setQsStyle(mOverlayService, "com.android.system.qs.neumorph");
+            setQsStyle("com.android.system.qs.neumorph");
 	  break;
           case 8:
-            setQsStyle(mOverlayService, "com.android.system.qs.reflected");
+            setQsStyle("com.android.system.qs.reflected");
 	  break;
           case 9:
-            setQsStyle(mOverlayService, "com.android.system.qs.surround");
+            setQsStyle("com.android.system.qs.surround");
               break;
           case 10:
-            setQsStyle(mOverlayService, "com.android.system.qs.thin");
+            setQsStyle("com.android.system.qs.thin");
       break;
           default:
       break;
