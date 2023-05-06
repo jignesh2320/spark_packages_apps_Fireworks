@@ -563,6 +563,14 @@
 	<item>10</item>
     </string-array>
 
+   <string-array name="qs_ui_entries" translatable="false">
+        <item>@string/default_string</item>
+        <item>@string/android_eleven</item>
+    </string-array>
+
+    <string-array name="qs_ui_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
 
     <!-- Status bar - Battery custom charging symbol -->
     <string-array name="text_charging_symbol_entries" translatable="false">

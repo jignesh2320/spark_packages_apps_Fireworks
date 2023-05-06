@@ -742,6 +742,7 @@
 
     <!-- Quick settings styling -->
     <string name="qs_styling">Quick Settings Styling</string>
+    <string name="qs_ui_title">Quick Settings UI</string>
     <string name="qs_styles_title">QS Panel Styles</string>
     <string name="qs_rounded_rectangle">QS Rounded Rectangle</string>
     <string name="qs_outline">QS Outline Style</string>
@@ -753,6 +754,7 @@
     <string name="qs_reflected">QS Reflected</string>
     <string name="qs_surround">QS Surround</string>
     <string name="qs_thin">QS ThinLine</string>
+    <string name="android_eleven">Android 11</string>
 
     <!-- Status bar - Battery custom charging symbol -->
     <string name="text_charging_symbol_title">Custom charging symbol for text style</string>

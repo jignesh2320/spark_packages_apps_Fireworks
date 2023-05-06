@@ -72,6 +72,7 @@ public class ThemeSettings extends DashboardFragment implements
     private static final String PREF_TILE_ANIM_DURATION = "qs_tile_animation_duration";
     private static final String PREF_TILE_ANIM_INTERPOLATOR = "qs_tile_animation_interpolator";
     private static final String QS_PANEL_STYLE  = "qs_panel_style";
+    private static final String KEY_QS_UI_STYLE = "qs_ui_style";
     private static final String KEY_SYS_INFO = "qs_system_info";
     private static final String KEY_SYS_INFO_ICON = "qs_system_info_icon";
 
@@ -79,6 +80,7 @@ public class ThemeSettings extends DashboardFragment implements
     private IOverlayManager mOverlayManager;
     private IOverlayManager mOverlayService;
     private SystemSettingListPreference mQsStyle;
+    private SystemSettingListPreference mQsUI;
     private SystemSettingEditTextPreference mFooterString;
     private SystemSettingListPreference mSettingsDashBoardStyle;
     private ListPreference mTileAnimationStyle;
@@ -146,6 +148,7 @@ public class ThemeSettings extends DashboardFragment implements
         .asInterface(ServiceManager.getService(Context.OVERLAY_SERVICE));
 
         mQsStyle = (SystemSettingListPreference) findPreference(QS_PANEL_STYLE);
+        mQsUI = (SystemSettingListPreference) findPreference(KEY_QS_UI_STYLE);
         mCustomSettingsObserver.observe();
 
         mSystemInfo = (ListPreference) findPreference(KEY_SYS_INFO);
@@ -171,13 +174,19 @@ public class ThemeSettings extends DashboardFragment implements
             resolver.registerContentObserver(Settings.System.getUriFor(
                     Settings.System.QS_PANEL_STYLE),
                     false, this, UserHandle.USER_ALL);
+            resolver.registerContentObserver(Settings.System.getUriFor(
+                    Settings.System.QS_UI_STYLE),
+                    false, this, UserHandle.USER_ALL);
         }
 
         @Override
         public void onChange(boolean selfChange, Uri uri) {
             if (uri.equals(Settings.System.getUriFor(Settings.System.QS_PANEL_STYLE))) {
                 updateQsStyle();
-            }
+	    }
+            else if  (uri.equals(Settings.System.getUriFor(Settings.System.QS_UI_STYLE))) {
+                updateQsStyle(true /*QS UI theme*/);
+	    }
         }
     }
 
@@ -234,38 +243,61 @@ public class ThemeSettings extends DashboardFragment implements
         } else if (preference == mQsStyle) {
             mCustomSettingsObserver.observe();
             return true;
-        }
+        } else if (preference == mQsUI) {
+            mCustomSettingsObserver.observe();
+            return true;
+	}
         return false;
     }
 
 
-    private void updateQsStyle() {
+    private void updateQsStyle(boolean isQsUI) {
         ContentResolver resolver = getActivity().getContentResolver();
 
+	boolean isA11Style = Settings.System.getIntForUser(getContext().getContentResolver(),
+                Settings.System.QS_UI_STYLE , 1, UserHandle.USER_CURRENT) == 1;
+	if (isQsUI) {
+	    setQsStyle(isA11Style ? "com.android.system.qs.ui.A11" : "com.android.systemui");
+	} else {
         int qsPanelStyle = Settings.System.getIntForUser(getContext().getContentResolver(),
                 Settings.System.QS_PANEL_STYLE , 0, UserHandle.USER_CURRENT);
 
-        if (qsPanelStyle == 0) {
-            setDefaultStyle(mOverlayService);
-        } else if (qsPanelStyle == 1) {
+        switch (qsPanelStyle) {
+    	  case 0:
+            setQsStyle(mOverlayService, "com.android.systemui");
+          break;
+          case 1:
             setQsStyle(mOverlayService, "com.android.system.qs.roundedrectangle");
-        } else if (qsPanelStyle == 2) {
+	  break;
+          case 2:
             setQsStyle(mOverlayService, "com.android.system.qs.outline");
-        } else if (qsPanelStyle == 3 || qsPanelStyle == 4) {
+	  break;
+          case 3:
+	  case 4:
             setQsStyle(mOverlayService, "com.android.system.qs.twotoneaccent");
-        }else if (qsPanelStyle == 5) {
+	  break;
+          case 5:
             setQsStyle(mOverlayService, "com.android.system.qs.shaded");
-        }else if (qsPanelStyle == 6) {
+	  break;
+          case 6:
             setQsStyle(mOverlayService, "com.android.system.qs.cyberpunk");
-        }else if (qsPanelStyle == 7) {
+ 	  break;
+          case 7:
             setQsStyle(mOverlayService, "com.android.system.qs.neumorph");
-        }else if (qsPanelStyle == 8) {
+	  break;
+          case 8:
             setQsStyle(mOverlayService, "com.android.system.qs.reflected");
-        }else if (qsPanelStyle == 9) {
+	  break;
+          case 9:
             setQsStyle(mOverlayService, "com.android.system.qs.surround");
-        }else if (qsPanelStyle == 10) {
+              break;
+          case 10:
             setQsStyle(mOverlayService, "com.android.system.qs.thin");
+              break;
+            default:
+              break;
         }
+	 }
     }
 
     public static void setDefaultStyle(IOverlayManager overlayManager) {
@@ -279,20 +311,11 @@ public class ThemeSettings extends DashboardFragment implements
         }
     }
 
-    public static void setQsStyle(IOverlayManager overlayManager, String overlayName) {
-        try {
-            for (int i = 0; i < QS_STYLES.length; i++) {
-                String qsStyles = QS_STYLES[i];
-                try {
-                    overlayManager.setEnabled(qsStyles, false, USER_SYSTEM);
-                } catch (RemoteException e) {
-                    e.printStackTrace();
-                }
-            }
-            overlayManager.setEnabled(overlayName, true, USER_SYSTEM);
-        } catch (RemoteException e) {
-            e.printStackTrace();
-        }
+    public static void setQsStyle(String overlayName) {
+        boolean isA11Style = Settings.System.getIntForUser(getContext().getContentResolver(),
+                Settings.System.QS_UI_STYLE , 1, UserHandle.USER_CURRENT) == 1;
+        mThemeUtils.setOverlayEnabled(isA11Style ? "android.theme.customization.qs_ui" : "android.theme.customization.qs_panel", overlayName, "com.android.systemui");
+    }
     }
 
     public static final String[] QS_STYLES = {
