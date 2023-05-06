@@ -58,7 +58,7 @@
 
   <com.spark.support.preferences.SystemSettingListPreference
         android:key="statusbar_clock_chip"
-         android:title="@string/statusbar_clock_chip_title"
+         android:title="@string/status_bar_show_clock_bg"
          android:entries="@array/statusbar_clock_chip_entries"
          android:entryValues="@array/statusbar_clock_chip_values"
          android:summary="%s"
