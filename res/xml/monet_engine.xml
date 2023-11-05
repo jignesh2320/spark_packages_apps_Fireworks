@@ -65,7 +65,7 @@
         android:summary="@string/monet_engine_chroma_factor_summary"
         android:defaultValue="100"
         android:max="225"
-        settings:min="25"
+        settings:min="0"
         settings:interval="5"/>
 
     <com.spark.settings.preferences.SecureSettingSwitchPreference
