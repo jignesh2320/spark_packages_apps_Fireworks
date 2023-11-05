@@ -43,7 +43,7 @@
     <com.spark.settings.preferences.SecureSettingSeekBarPreference
         android:key="kg_small_clock_text_size"
         android:title="@string/kg_small_clock_text_size_title"
-        android:max="100"
+        android:max="200"
         settings:min="25"
         settings:interval="1"
         android:defaultValue="86"
@@ -55,7 +55,7 @@
         android:max="180"
         settings:min="25"
         settings:interval="1"
-        android:defaultValue="180"
+        android:defaultValue="280"
         settings:units="dp" />
 
     <com.spark.settings.preferences.SystemSettingListPreference
