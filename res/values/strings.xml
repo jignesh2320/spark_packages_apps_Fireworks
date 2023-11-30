@@ -78,6 +78,7 @@
     <string name="battery_category">Energy saving Configurations</string>
     <string name="brightness_slider_category">Brightness Slider Customizations</string>
     <string name="lockscreen_interface_category">LockScreen Interface</string>
+    <string name="Privacy_title">Privacy related</string>
 
     <!-- Color picker -->
     <string name="rgb">RGB</string>

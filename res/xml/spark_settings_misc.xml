@@ -153,7 +153,12 @@
         android:title="@string/hosts_block_title"
         android:summary="@string/hosts_block_summary"
         android:defaultValue="false" />
-    
+   </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="Privacy_Category"
+        android:title="@string/Privacy_title">
+
     <Preference
         android:order="91"
         android:key="hide_developer_status_settings"
