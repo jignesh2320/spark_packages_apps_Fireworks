@@ -146,7 +146,7 @@
         android:key="media_controls_always_show_time"
         android:title="@string/media_controls_always_show_time_title"
         android:summary="@string/media_controls_always_show_time_summary"
-        android:defaultValue="false" />
+        android:defaultValue="true" />
 
     <com.spark.settings.preferences.SystemPropertySwitchPreference
         android:key="persist.spark.hosts_block"
