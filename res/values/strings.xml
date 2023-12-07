@@ -437,6 +437,10 @@
     <string name="theme_customization_date_font_title">Lockscreen date font style</string>
     <string name="theme_customization_date_font_summary">Set lockscreen date font style</string>
 
+    <!-- Pif -->
+    <string name="pif_title">Play integrity fix</string>
+    <string name="pif_summary">View current values used to spoof GMS</string>
+
     <!-- Netflix Spoof -->
     <string name="netflix_spoof_title">Netflix spoof</string>
     <string name="netflix_spoof_summary">Spoof your device as different model for Netflix</string>
