@@ -764,6 +764,12 @@
     <string name="volume_media_output_toggle_title">Volume media output</string>
     <string name="volume_media_output_toggle_summary">Show media output toggle when there is an active stream</string>
 
+ <!-- Healthy Charge -->
+    <string name="health_charge_enabled_title">Healthy Charge</string>
+    <string name="health_charge_enabled_summary">Enable healthy charging notifications</string>
+    <string name="health_charge_low_threshold_title">Low battery level threshold</string>
+    <string name="health_charge_high_threshold_title">Charging level threshold</string>
+
     <!-- Sensor block per-package -->
     <string name="sensor_block_title">Sensor block per-package</string>
     <string name="sensor_block_summary">Block access to certain sensors for some apps to save battery</string>
