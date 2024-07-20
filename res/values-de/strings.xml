@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Copyright (C) 2014-2016 The Dirty Unicorns Project
+      Copyright (C) 2016 AospExtended ROM Project
+      Copyright (C) 2022 DerpFest
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    
+    <!-- General app strings -->
+    <string name="add">Hinzufügen</string>
+    <string name="advanced">Benutzerdefiniert</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="default_text">Standard</string>
+    <string name="dlg_ok">OK</string>
+    <string name="attention">Achtung</string>
+    <string name="loading">Lädt\u2026</string>
+    <string name="reset">Zurücksetzen</string>
+    <string name="reset_colors">Farben zurücksetzen</string>
+    <string name="reset_android">Android</string>
+    <string name="text_title">Text</string>
+    <string name="icon_title">Symbol</string>
+    <string name="color_title">Farbe</string>
+    <string name="colors_title">Farben</string>
+
+    <!-- DerpSpace categories -->
+    <string name="icons_category">Symbole</string>
+    <string name="status_bar_category">Statusleiste</string>
+    <string name="notifications_panel_category">Schnelleinstellungen</string>
+    <string name="system_category">System</string>
+    <string name="lockscreen_category">Sperrbildschirm</string>
+    <string name="listview">ListView</string>
+
+    <!-- Frags -->
+    <!-- General Tweaks -->
+    <string name="general_tweaks_title">Allgemeine Einstellungen</string>
+
+    <!-- Lockscreen UI -->
+    <string name="lockscreen_ui_title">Sperrbildschirm-UI</string>
+
+    <!-- Lockscreen general category -->
+    <string name="general_category">Allgemein</string>
+
+    <!-- Network Traffic -->
+    <string name="traffic_title">Netzwerkmonitor</string>
+
+    <!-- Misc DerpSpace -->
+    <string name="misc_derpspace_title">Sonstiges</string>
+
+    <!-- Notifications -->
+    <string name="notifications_title">Benachrichtigungen</string>
+
+    <!-- Quick Settings -->
+    <string name="quick_settings_title">Schnelleinstellungen</string>
+
+    <!-- Status bar clock and date options -->
+    <string name="status_bar_clock_title">Zeit- und Datumsanzeige</string>
+
+    <!-- Quick Settings brightness slider -->
+    <string name="qs_brightness_slider_category">Helligkeitsregler</string>
+
+    <!-- Quick Settings footer category -->
+    <string name="footer_category">Fußzeile</string>
+
+    <!-- Statusbar Iten -->
+    <string name="statusbar_items_category">Statusbar-Elemente</string>
+
+    <!-- Customisation -->
+    <string name="customisation_title">Personalisierung</string>
+
+    <!-- Battery -->
+    <string name="battery_title">Akkustand</string>
+
+    <!-- Battery Settings -->
+    <string name="battery_settings_title">Akkustandanzeige</string>   
+
+    <!-- Battery Styles -->
+    <string name="battery_style_category_title">Akkustandanzeige</string>
+    <string name="battery_percent_title">Akkustand in Prozent</string>
+
+    <!-- App info dialog -->
+    <string name="derpspace_dialog_title">Hilf uns, Dir zu helfen!</string>
+    <string name="derpspace_dialog_message">Wenn Du bei einer dieser Einstellungen einen Bug findest, melde ihn in unserer Telegram-Gruppe. Du MUSST folgendes angeben, wenn Du einen Fehlerbericht postest:\n\n1. Ein logcat oder last_kmsg\n2. Verwendeter Kernel und Mods\n3. Nützliche Informationen\n\nWenn Du etwas nicht angemessen meldest, erwarte NICHT, dass die Dinge behoben werden.</string>
+    <string name="derpspace_dialog_toast">LESEN SIE ALLES!</string>
+
+    <!-- QuickSettings haptic feedback -->
+    <string name="qs_tile_vibration_title">Vibration</string>
+    <string name="quick_settings_vibrate_title">Vibrieren bei Berührung</string>
+    <string name="quick_settings_vibrate_summary">Beim Berühren der Schaltflächen vibrieren</string>
+    <string name="quick_settings_vibrate_duration_title">Vibrationsdauer</string>
+    <string name="quick_settings_vibrate_duration_summary">Wie viele Millisekunden soll vibriert werden</string>
+
+    <!-- Tiles animation style  -->
+    <string name="qs_tile_animation_title">Animationen</string>
+    <string name="qs_tile_animation_style_title">Style</string>
+    <string name="qs_tile_animation_duration_title">Geschwindigkeit</string>
+    <string name="qs_tile_animation_interpolator_title">Interpolation</string>
+    <string name="qs_tile_animation_style_off">Keine</string>
+    <string name="qs_tile_animation_style_flip">Drehen</string>
+    <string name="qs_tile_animation_style_rotate">Rotieren</string>
+    <string name="qs_tile_animation_duration_low">Langsam</string>
+    <string name="qs_tile_animation_duration_default">Standard</string>
+    <string name="qs_tile_animation_duration_fast">Schnell</string>
+    <string name="qs_tile_animation_interpolator_linearInterpolator">Linear</string>
+    <string name="qs_tile_animation_interpolator_accelerateInterpolator">Beschleunigen</string>
+    <string name="qs_tile_animation_interpolator_decelerateInterpolator">Verzögern</string>
+    <string name="qs_tile_animation_interpolator_accelerateDecelerateInterpolator">Beschleunigen - Verlangsamen</string>
+    <string name="qs_tile_animation_interpolator_bounceInterpolator">Hüpfend</string>
+    <string name="qs_tile_animation_interpolator_overshootInterpolator">Überschwingen</string>
+    <string name="qs_tile_animation_interpolator_anticipateInterpolator">Vorausberechnen</string>
+    <string name="qs_tile_animation_interpolator_anticipateOvershootInterpolator">Überschwingen vorausberechnen</string>
+    <string name="qs_set_animation_style">%1$s</string>
+    <string name="qs_set_animation_duration">%1$s</string>
+    <string name="qs_set_animation_interpolator">%1$s</string>
+
+    <!-- 4G icon -->
+    <string name="show_fourg_icon_title">4G-Symbol</string>
+    <string name="show_fourg_icon_summary">Anzeige von 4G im Signalsymbol anstelle von LTE</string>
+
+    <!-- Data disabled icon -->
+    <string name="data_disabled_icon_title">Symbol für deaktivierte Mobildaten anzeigen</string>
+    <string name="data_disabled_icon_summary">Zeigen Sie das Kreuz neben der Signalleiste an, wenn die Mobildaten deaktiviert sind</string>
+
+    <!-- QS footer warnings -->
+    <string name="qs_footer_warnings_title">Fußzeilenwarnungen</string>
+    <string name="qs_footer_warnings_summary">Eine Warnung unten in den Schnelleinstellungen anzeigen, wenn das Netzwerk von externen Apps oder VPN überwacht wird</string>
+
+    <!-- Old mobile type icons -->
+    <string name="use_old_mobiletype_title">Alten Stil der Netzsignalanzeige benutzen</string>
+    <string name="use_old_mobiletype_summary">Aktivieren, um zur früheren Symbol-Darstellung mit integrierter Verbindungstyp-Anzeige zu wechseln</string>
+
+    <!-- Lockscreen battery info indicator  -->
+    <string name="lockscreen_battery_info_title">Zusatzinfo zum Ladevorgang</string>
+    <string name="lockscreen_battery_info_summary">Die vom System ermittelte Ladespannung, Stromstärke, Wattzahl und Akkutemperatur während des Ladevorgangs auf dem Sperrbildschirm anzeigen</string>
+
+    <!-- Tiles on secure keyguard -->
+    <string name="use_tiles_on_secure_keyguard_title">Entsperrung erforderlich, um sensible QS-Kacheln zu verwenden</string>
+    <string name="use_tiles_on_secure_keyguard_summary">Aufforderung zum Entsperren des Sperrbildschirms bei Verwendung empfindlicher QS-Kacheln</string>
+
+    <!-- QS footer text -->
+    <string name="qs_footer_text_show_title">QS-Fußzeilentext anzeigen</string>
+    <string name="qs_footer_text_string_title">QS-Fußzeilentext anpassen</string>
+    <string name="qs_footer_text_string_summary">Auf leer setzen für Standard #StayDerped</string>
+
+    <!-- Notifications general category -->
+    <string name="notifications_general_category_title">Allgemein</string>
+
+    <!-- Notification count -->
+    <string name="status_bar_notif_count_title">Anzahl der Benachrichtigungen</string>
+    <string name="status_bar_notif_count_summary">Zeigen Sie die Anzahl der ausstehenden Benachrichtigungen an</string>
+
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the settings category for theme overlays. -->
+    <string name="theme_customization_category">Designs</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize headline and body fonts. -->
+    <string name="theme_customization_font_title">Schriftart für Überschrift und Haupttext</string>
+    <string name="theme_customization_font_summary">Systemschriftart festlegen</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the adaptive icon shape (e.g. launcher and quick settings icons). -->
+    <string name="theme_customization_icon_shape_title">Form des Symbols</string>
+    <string name="theme_customization_icon_shape_summary">Formstil für Systemsymbole festlegen</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Title of the setting which enables overlays to customize the system wide icon pack. -->
+    <string name="theme_customization_icon_pack_title">Statusleiste/QS Symbole</string>
+    <string name="theme_customization_icon_pack_summary">Benutzerdefinierten Icon-Pack-Stil festlegen</string>
+    <!-- [CHAR_LIMIT=NONE] Developer Settings: Label for the option that turns off customizations for a given category.-->
+    <string name="theme_customization_device_default">Gemäß Standard fürs Gerät</string>
+
+    <!-- Custom Wi-Fi bar icons -->
+    <string name="theme_customization_wifi_icon_title">WLAN-Symbol</string>
+    <string name="theme_customization_wifi_icon_summary">Stil für WLAN-Symbol festlegen</string>
+
+    <!-- Custom Signal bar icons -->
+    <string name="theme_customization_signal_icon_title">Mobilfunksymbole</string>
+    <string name="theme_customization_signal_icon_summary">Stil für Mobilfunksymbole festlegen</string>
+
+    <!-- Black theme -->
+    <string name="system_black_theme_title">Schwarzes Design verwenden</string>
+    <string name="system_black_theme_summary">Schwarze Hintergrundfarben erzwingen</string>
+
+    <!-- Applications fragment -->
+    <string name="search">Suche</string>
+    <string name="search_apps">Apps suchen</string>
+
+    <!-- reTicker -->
+    <string name="reticker_title">reTicker</string>
+    <string name="reticker_summary">Ersetzen Sie Ihre Benachrichtigungen durch eine neu gestaltete Version vom Ticker. \nSchmal und weniger invasiv als eine Standardbenachrichtigung.</string>
+    <string name="reticker_colored_title">Verwenden Sie App-farbigen Hintergrund</string>
+    <string name="reticker_colored_summary">Ersetzen Sie die Hintergrundfarbe von reTicker mithilfe der Hauptfarbe der Benachrichtigungs-App</string>
+    <string name="reticker_landscape_only_title">Nur im Querformat</string>
+    <string name="reticker_landscape_only_summary">reTicker nur aktivieren, wenn das Gerät im Querformat ist</string>
+
+    <!-- Network traffic -->
+    <string name="network_traffic_title">Netzwerkverkehrsanzeige</string>
+    <string name="network_traffic_summary">Anpassen der Anzeige des Netzwerkverkehrs</string>
+    <string name="network_traffic_state_title">Netzwerkverkehrsanzeige aktivieren</string>
+    <string name="network_options_title">Einstellungen</string>
+    <string name="network_traffic_autohide_title">Netzwerkverkehrsanzeige bei Inaktivität ausblenden</string>
+    <string name="network_traffic_autohide_summary">Blendet die Netzwerkverkehrsanzeige aus, wenn der Netzwerkverkehr unter 1 KB/s liegt</string>
+
+    <!-- Media art -->
+    <string name="lockscreen_media_art_options_title">Albumcover</string>
+    <string name="media_art_title">Albumcover</string>
+    <string name="media_art_summary">Albumcover anzeigen, wenn verfügbar</string>
+
+    <!-- Lock screen cover art -->
+    <string name="lockscreen_media_blur_title">Unschärfebetrag für Mediengrafiken</string>
+
+    <!-- Clock position -->
+    <string name="status_bar_clock_position_center">Zentriert</string>
+    <string name="status_bar_clock_position_left">Links</string>
+    <string name="status_bar_clock_position_right">Rechts</string>
+    <string name="status_bar_clock_position_title">Position der Uhr</string>
+
+    <!-- Clock AM/PM -->
+    <string name="status_bar_am_pm_hidden">Ausgeblendet</string>
+    <string name="status_bar_am_pm_normal">Standard</string>
+    <string name="status_bar_am_pm_small">Klein</string>
+    <string name="status_bar_am_pm_title">AM/PM-Format</string>
+    <string name="status_bar_am_pm_info">24-Stunden-Format ist aktiviert</string>
+
+    <!-- Clock show seconds -->
+    <string name="status_bar_clock_show_seconds_title">Sekunden anzeigen</string>
+    <string name="status_bar_clock_show_seconds_desc">Stunden, Minuten und Sekunden anzeigen</string>
+
+    <!-- Battery style and percentage -->
+    <string name="status_bar_battery_style_circle">Kreis</string>
+    <string name="status_bar_battery_style_icon_portrait">Symbol (Hochformat)</string>
+    <string name="status_bar_battery_style_text">Text</string>
+    <string name="status_bar_battery_style_title">Anzeigeformat</string>
+    <string name="status_bar_battery_percentage_hidden">Ausgeblendet</string>
+    <string name="status_bar_battery_percentage_text_inside">Innerhalb des Symbols</string>
+    <string name="status_bar_battery_percentage_text_next">Neben dem Symbol</string>
+    <string name="status_bar_battery_percentage_title">Akkustand in Prozent</string>
+
+    <!-- Brightness slider -->
+    <string name="qqs_show_brightness_title">Helligkeitsregler in QQS anzeigen</string>
+    <string name="brightness_slider_position_title">Helligkeitsreglerposition</string>
+    <string name="top">Oben</string>
+    <string name="bottom">Unten</string>
+    <string name="show_auto_brightness_button_title">Symbol für autom. Helligkeit anzeigen</string>
+
+    <!-- Pulse -->
+    <string name="ambient_light_category">Kantenbeleuchtung</string>
+    <string name="pulse_ambient_light_text">Die Kantenbeleuchtung lässt Ihren Bildschirm leuchten, wenn Sie eine Benachrichtigung erhalten. Dies macht es einfacher zu erkennen, wenn Sie eine Benachrichtigung erhalten, während sich das Telefon im Ruhemodus befindet.</string>
+    <string name="pulse_ambient_light_enable">Kantenbeleuchtung verwenden</string>
+    <string name="pulse_ambient_light_title">Kantenbeleuchtung</string>
+    <string name="pulse_ambient_light_summary">Beleuchtet die Seitenränder des Bildschirms bei einem Benachrichtigungsimpuls</string>
+    <string name="ambient_notification_light_accent_title">Systemakzentfarbe</string>
+    <string name="ambient_notification_light_color_automatic_title">Benachrichtigungsfarbe</string>
+    <string name="pulse_ambient_light_color">Beleuchtung mit</string>
+
+    <!-- QS tiles layout -->
+    <string name="qs_tile_layout_title">Kachel-Layout</string>
+    <string name="qs_tile_layout_summary">Das Kachel-Layout der Schnelleinstellungen anpassen</string>
+    <string name="qs_tiles_layout_category">Kachel-Layout</string>
+    <string name="qs_rows_portrait_title">Zeilen (Hochformat)</string>
+    <string name="qqs_rows_portrait_title">Zeilen (Schnell-QS-Hochformat)</string>
+    <string name="qs_columns_portrait_title">Spalten (Hochformat)</string>
+    <string name="qs_apply_change_button_title">Änderung anwenden</string>
+    <string name="qs_apply_change_failed">Änderung konnte nicht angewendet werden</string>
+    <string name="qs_tile_hide_label_title">Beschriftung ausblenden</string>
+    <string name="qs_tile_hide_label_summary">Nur Symbol für QS-Kacheln anzeigen</string>
+    <string name="qs_tile_vertical_layout_title">Vertikales Layout</string>
+    <string name="qs_tile_vertical_layout_summary">Vertikales Layout für QS-Kacheln aktivieren</string>
+
+    <!-- Statusbar lyric -->
+    <string name="status_bar_lyric_title">Statusleisten-Lyric</string>
+    <string name="status_bar_lyric_summary">Lyrik in der Statusleiste anzeigen (App-Unterstützung erforderlich)</string>
+    <string name="status_bar_show_lyric_title">Statusleisten-Lyric aktivieren</string>
+
+</resources>
