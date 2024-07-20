@@ -614,6 +614,14 @@
     <!-- Less boring heads up -->
     <string name="less_boring_heads_up_title">减少无关浮动通知</string>
     <string name="less_boring_heads_up_summary">仅显示电话或短信的悬浮通知</string>
+
+    <!-- Statusbar lyric -->
+    <string name="status_bar_lyric_title">状态栏歌词</string>
+    <string name="status_bar_lyric_summary">在状态栏中显示歌词(需应用程序支持)</string>
+    <string name="status_bar_show_lyric_title">显示状态栏歌词</string>
+    <string name="status_bar_lyric_options_title">选项</string>
+    <string name="disguise_props_for_music_app_title">对音乐应用伪装机型</string>
+    <string name="disguise_props_for_music_app_summary">对一些音乐应用伪装机型以正确启用状态栏歌词. 启用该设置后需要重启音乐应用</string>
     <!-- Pulse music visualizer -->
     <string name="pulse_help_policy_notice_title">关于脉冲</string>
     <string name="pulse_help_policy_notice_summary">当音乐在设备上播放时，脉冲是出色的音频图形均衡器</string>
